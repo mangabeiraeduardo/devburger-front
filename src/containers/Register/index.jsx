@@ -10,7 +10,7 @@ import { api } from '../../services/api';
 import { Container, LeftContainer, RightContainer, Title, Form, InputContainer, Link } from './styles';
 
 export function Register() {
-  const navigate = userNavigate();
+  const navigate = useNavigate();
   const schema = yup
     .object({
       name: yup.string().required('O nome é obrigatório'),
